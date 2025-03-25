@@ -1,0 +1,25 @@
+
+import React from 'react';
+import Navbar from '../components/layout/Navbar';
+import Footer from '../components/layout/Footer';
+import Hero from '../components/home/Hero';
+import Introduction from '../components/home/Introduction';
+import MissionVision from '../components/home/MissionVision';
+import UpcomingEvents from '../components/home/UpcomingEvents';
+
+const Index = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-grow">
+        <Hero />
+        <Introduction />
+        <MissionVision />
+        <UpcomingEvents />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Index;
